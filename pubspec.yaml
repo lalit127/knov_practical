@@ -83,19 +83,10 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
-    - .env
-    - assets/raw/
-    - assets/lottie/
 
   fonts:
     - family: Satoshi
       fonts:
         - asset: assets/fonts/satoshi/Satoshi_Bold.otf
-    - family: Satoshi_Regular
-      fonts:
-        - asset: assets/fonts/satoshi/Satoshi_Regular.otf
 
-    - family: Lexend
-      fonts:
-        - asset: assets/fonts/lexend/LexendFont.ttf
 
