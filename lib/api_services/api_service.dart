@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:knov_practical/models/common_api_model.dart';
+import 'package:knov_practical/models/post/post_detail_model.dart';
 import 'package:knov_practical/utils/constants.dart';
 import 'package:knov_practical/utils/dio_utils.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
@@ -26,10 +27,10 @@ abstract class ApiService {
   }
 
   @GET(Constants.postList)
-  Future<CommonApiModel> getPostList();
+  Future<List<Map<String, dynamic>>> getPostList();
 
   @GET(Constants.postDetail)
-  Future<CommonApiModel> getAnotherUserProfileById({
+  Future<PostDetailModel> getPostDetail({
     @Path('postId') required String postId,
   });
 }

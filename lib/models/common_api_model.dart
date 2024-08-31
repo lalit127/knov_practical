@@ -2,7 +2,7 @@ class CommonApiModel {
   CommonApiModel({this.status, this.message, this.data});
 
   CommonApiModel.fromJson(Map<String, dynamic> json) {
-    status = json['status'] as int;
+    if (json['status'] != null) status = json['status'] as int;
     message = json['message']?.toString();
     data = json['data'];
   }

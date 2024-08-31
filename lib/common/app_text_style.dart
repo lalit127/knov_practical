@@ -50,7 +50,7 @@ class AppTextStyle {
   late final TextStyle display30W700;
   late final TextStyle display36W700;
 
-  AppTextStyles(BuildContext context) {
+  AppTextStyle(BuildContext context) {
     display6W400 = Theme.of(context!).textTheme.displaySmall!.copyWith(
           fontFamily: BaseFonts.satoshi,
           fontSize: 6,
